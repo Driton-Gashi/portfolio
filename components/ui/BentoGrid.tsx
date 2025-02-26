@@ -1,10 +1,10 @@
-"use client"; // Mark this component as client-only
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
-const Lottie = dynamic(() => import("react-lottie"), {
-  ssr: false, // Disable server-side rendering for this component
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
 });
 
 import { cn } from "@/lib/utils";
@@ -51,24 +51,32 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["React", "Next.js", "Express"];
+  const rightLists = ["Typescript", "MySQL", "Node"];
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  const handleCopy = async () => {
+    const text = "hello@dritongashi.com";
 
-  const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    try {
+      if (!navigator.clipboard) {
+        throw new Error("Clipboard API not supported");
+      }
+
+      await navigator.clipboard.writeText(text);
+
+      setCopied(true);
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (error) {
+      console.error("Failed to copy text: ", error);
+
+      // Optionally, show a fallback message or use a different method
+      alert("Failed to copy text. Please copy it manually.");
+    }
   };
 
   return (
@@ -161,7 +169,12 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               {copied && (
                 <div className="absolute -bottom-5 right-0">
-                  <Lottie options={defaultOptions} height={200} width={400} />
+                  <Lottie
+                    animationData={animationData}
+                    loop={copied}
+                    autoplay={copied}
+                    style={{ width: 400, height: 200 }}
+                  />
                 </div>
               )}
 
