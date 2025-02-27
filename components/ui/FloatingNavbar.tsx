@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,17 +9,17 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export const FloatingNav = ({
-  navItems,
-  className,
-}: {
+interface P {
+  setHasUsedNavbar: Dispatch<SetStateAction<boolean>>;
   navItems: {
     name: string;
     link: string;
     icon?: JSX.Element;
   }[];
   className?: string;
-}) => {
+}
+
+export const FloatingNav = ({ setHasUsedNavbar, navItems, className }: P) => {
   const { scrollYProgress } = useScroll();
 
   // set true for the initial state so that nav bar is visible in the hero section
@@ -70,6 +70,7 @@ export const FloatingNav = ({
       >
         {navItems.map((navItem: any, idx: number) => (
           <Link
+            onClick={() => setHasUsedNavbar(true)}
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(

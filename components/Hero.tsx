@@ -1,12 +1,18 @@
+"use client";
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
+import { useState } from "react";
 
-const Hero = () => {
+interface P {
+  hasUsedNavbar: boolean;
+}
+
+const Hero = ({ hasUsedNavbar }: P) => {
   return (
-    <div className="pb-20 pt-36">
+    <div className={`pb-20 ${hasUsedNavbar ? "pt-[27rem]" : "pt-36"}`}>
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -56,7 +62,7 @@ const Hero = () => {
             I try my best to create things with ❤
           </p>
 
-          <Link href="#about">
+          <Link href="#projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

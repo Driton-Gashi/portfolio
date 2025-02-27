@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "Home", link: "#top" },
   { name: "About", link: "#about" },
@@ -9,7 +11,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Get in touch today to discuss how we can partner for success!",
+    title:
+      "I'm a Software Engineer with 2+ years of experience in Web Development",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -19,7 +22,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Worked with different clients around the world",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -287,13 +290,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Driton-Gashi",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/instagram.svg",
+    link: "https://www.instagram.com/driton_.gashi/",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/dritoni-gashi/",
   },
 ];
