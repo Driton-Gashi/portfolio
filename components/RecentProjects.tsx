@@ -1,19 +1,34 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import { useState } from "react";
+import { FaLocationArrow, FaEllipsis } from "react-icons/fa6";
 import Image from "next/image";
-import { projects } from "@/data";
+import { projects as initialProjects, moreProjects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import MagicButton from "./MagicButton";
+
+const BATCH_SIZE = 2;
 
 const RecentProjects = () => {
+  const [displayedProjects, setDisplayedProjects] = useState(initialProjects);
+  const [remainingProjects, setRemainingProjects] = useState(moreProjects);
+
+  const handleShowMore = () => {
+    const nextBatch = remainingProjects.slice(0, BATCH_SIZE);
+    const remaining = remainingProjects.slice(BATCH_SIZE);
+    setDisplayedProjects((prev) => [...prev, ...nextBatch]);
+    setRemainingProjects(remaining);
+  };
+
   return (
     <div id="projects" className="py-20">
       <h3 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h3>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {displayedProjects.map((item) => (
           <div
             key={item.id}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -41,10 +56,7 @@ const RecentProjects = () => {
 
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
+                style={{ color: "#BEC1DD", margin: "1vh 0" }}
               >
                 {item.des}
               </p>
@@ -55,11 +67,9 @@ const RecentProjects = () => {
                     <div
                       key={index}
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
+                      style={{ transform: `translateX(-${5 * index + 2}px)` }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt="icon" className="p-2" />
                     </div>
                   ))}
                 </div>
@@ -79,6 +89,19 @@ const RecentProjects = () => {
             </PinContainer>
           </div>
         ))}
+      </div>
+
+      <div
+        className={`text-center mt-10 ease-in ${
+          remainingProjects.length === 0 && "fade-in-0 hidden"
+        }`}
+      >
+        <MagicButton
+          title="Show More"
+          position="right"
+          icon={<FaEllipsis />}
+          handleClick={handleShowMore}
+        />
       </div>
     </div>
   );

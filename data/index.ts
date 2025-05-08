@@ -1,10 +1,7 @@
-import { link } from "fs";
-
 export const navItems = [
   { name: "Home", link: "#top" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -105,7 +102,7 @@ export const projects = [
   {
     id: 3,
     title: "Dital Legal",
-    des: "change me here",
+    des: "...",
     img: "/projects/Ditar-Legal.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -119,7 +116,7 @@ export const projects = [
   {
     id: 4,
     title: "Dital Compliance",
-    des: "change me here",
+    des: "...",
     img: "/projects/Ditar-Compliance.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -132,9 +129,9 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Dital eAkademie",
-    des: "change me here",
-    img: "/bg.png",
+    title: "ITM Installation",
+    des: "...",
+    img: "/projects/itm-installation.png",
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -142,12 +139,12 @@ export const projects = [
       "techs/js.svg",
       "/techs/yoast.svg",
     ],
-    link: "https://ditar-compliance.de/",
+    link: "https://itm-installation.at/",
   },
   {
     id: 6,
     title: "Kanzlei Am Kureck",
-    des: "change me here",
+    des: "...",
     img: "/projects/Kanzlei-am-Kureck.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -161,7 +158,7 @@ export const projects = [
   {
     id: 7,
     title: "Embel Home",
-    des: "change me here",
+    des: "...",
     img: "/projects/Embel-Home.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -175,7 +172,7 @@ export const projects = [
   {
     id: 8,
     title: "Bauunternehmung AR",
-    des: "change me here",
+    des: "...",
     img: "/projects/Bauunternehmung-AR.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -187,6 +184,8 @@ export const projects = [
     link: "https://bauunternehmung-ar.de/",
   },
 ];
+
+export const moreProjects = [];
 
 export const testimonials = [
   {
