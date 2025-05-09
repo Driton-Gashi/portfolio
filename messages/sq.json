@@ -1,11 +1,11 @@
 {
-  "NotFoundPage":{
+  "NotFoundPage": {
     "title": "Hello World"
   },
-    "Menu": {
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact"
-    }
+  "Menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
   }
+}

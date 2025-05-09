@@ -1,4 +1,7 @@
 {
+  "NotFoundPage": {
+    "title": "Hello World"
+  },
   "Menu": {
     "home": "Startseite",
     "about": "Über mich",
