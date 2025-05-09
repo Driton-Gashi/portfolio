@@ -1,5 +1,5 @@
 "use client";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,6 +8,8 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 interface P {
   setHasUsedNavbar: Dispatch<SetStateAction<boolean>>;
@@ -20,6 +22,7 @@ interface P {
 }
 
 export const FloatingNav = ({ setHasUsedNavbar, navItems, className }: P) => {
+  const t = useTranslations();
   const { scrollYProgress } = useScroll();
 
   // set true for the initial state so that nav bar is visible in the hero section
@@ -78,7 +81,7 @@ export const FloatingNav = ({ setHasUsedNavbar, navItems, className }: P) => {
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            <span className=" text-sm !cursor-pointer">{t(navItem.name)}</span>
           </Link>
         ))}
         {/* remove this login btn */}
@@ -86,6 +89,7 @@ export const FloatingNav = ({ setHasUsedNavbar, navItems, className }: P) => {
           <span>Login</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button> */}
+        <LanguageSwitcher />
       </motion.div>
     </AnimatePresence>
   );
