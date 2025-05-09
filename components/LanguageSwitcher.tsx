@@ -13,9 +13,6 @@ export default function LanguageSwitcher() {
   const currentLocale = useLocale();
 
   return (
-    // absolute
-    // top: 0;
-    // transform: translateY(-140%);
     <div className="absolute flex gap-3 top-0 -translate-y-[125%] xs:translate-y-0 xs:static xs:gap-0">
       {locales.map((locale) => {
         const newPathname = pathname.replace(`/${currentLocale}`, `/${locale}`);
