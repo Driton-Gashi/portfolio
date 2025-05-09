@@ -30,17 +30,6 @@ export default function GoTopBtn(): JSX.Element {
 
   return (
     <>
-      {/* <!-- Explanation --> */}
-      <div className="container mt-4 text-center text-gray-800">
-        <p className="mb-4">
-          Start scrolling the page and a strong{" "}
-          <strong>"Back to top" button </strong> will appear in the{" "}
-          <strong>bottom right corner</strong> of the screen.
-        </p>
-        <p>Click this button and you will be taken to the top of the page.</p>
-      </div>
-
-      {/* <!-- Back to top button --> */}
       {showButton && (
         <TERipple rippleColor="light">
           <button
