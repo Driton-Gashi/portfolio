@@ -57,8 +57,10 @@ npm run dev
 
 ## 📸 Screenshots
 
-![Website Screenshot - Desktop](https://i.imgur.com/79DrHhi.png)
-![Website Screenshot - Mobile](https://i.imgur.com/8P8UUPp.png)
+<p align="center">
+  <img src="https://i.imgur.com/79DrHhi.png" alt="Desktop Screenshot" width="48%" />
+  <img src="https://i.imgur.com/8P8UUPp.png" alt="Mobile Screenshot" width="48%" />
+</p>
 
 ---
 
