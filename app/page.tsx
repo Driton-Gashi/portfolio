@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { useState } from "react";
+import GoTopBtn from "@/components/GoTopBtn";
 
 const Home = () => {
   const [hasUsedNavbar, setHasUsedNavbar] = useState<boolean>(false);
@@ -24,6 +25,7 @@ const Home = () => {
         <Experience />
         <Approach />
         <Footer />
+        <GoTopBtn />
       </div>
     </main>
   );
