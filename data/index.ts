@@ -8,8 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title:
-      "I'm a Software Engineer with 2+ years of experience in Web Development",
+    title: "GridItemTitle1",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -19,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Worked with different clients around the world",
+    title: "GridItemTitle2",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -29,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "GridItemTitle3",
+    description: "GridItemDescription3",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for website development.",
+    title: "GridItemTitle4",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -47,11 +46,10 @@ export const gridItems = [
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently looking for a Sofware Engineer position",
-    description: "open to work",
+    title: "GridItemTitle5",
+    description: "GridItemDescription5",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -60,7 +58,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "GridItemTitle6",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -74,7 +72,7 @@ export const projects = [
   {
     id: 1,
     title: "Normholz AM",
-    des: "Normholz-AM a Doors and Floor construction company based in Bretzfeld, Germany",
+    des: "Normholz-AM",
     img: "/projects/Normholz-AM.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -88,7 +86,7 @@ export const projects = [
   {
     id: 2,
     title: "Berisha Maler Gmbh",
-    des: "Berisha Maler Gmbh is a construction company based in Austria",
+    des: "BerishaMaler",
     img: "/projects/Berisha-Maler.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -102,7 +100,7 @@ export const projects = [
   {
     id: 3,
     title: "Dital Legal",
-    des: "...",
+    des: "",
     img: "/projects/Ditar-Legal.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -116,7 +114,7 @@ export const projects = [
   {
     id: 4,
     title: "Dital Compliance",
-    des: "...",
+    des: "",
     img: "/projects/Ditar-Compliance.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -130,7 +128,7 @@ export const projects = [
   {
     id: 5,
     title: "ITM Installation",
-    des: "...",
+    des: "",
     img: "/projects/itm-installation.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -144,7 +142,7 @@ export const projects = [
   {
     id: 6,
     title: "Kanzlei Am Kureck",
-    des: "...",
+    des: "",
     img: "/projects/Kanzlei-am-Kureck.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -158,7 +156,7 @@ export const projects = [
   {
     id: 7,
     title: "Embel Home",
-    des: "...",
+    des: "",
     img: "/projects/Embel-Home.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -172,7 +170,7 @@ export const projects = [
   {
     id: 8,
     title: "Bauunternehmung AR",
-    des: "...",
+    des: "",
     img: "/projects/Bauunternehmung-AR.png",
     iconLists: [
       "/techs/wordpress.svg",
@@ -256,30 +254,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Software Engineer at Pabau",
-    desc: "As a Software Engineer at Pabau, I worked as part of a team to maintain and develop our web application, used by thousands of clients worldwide. I was responsible for addressing technical challenges under the pressure of deadlines. Communication was a key aspect of my role, as collaboration with the QA and Project teams was essential to deliver high-quality results.",
+    title: "WorkExperienceTitle1",
+    desc: "WorkExperienceDesc1",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
-    // thumbnail: "/pabau-logo.png",
   },
   {
     id: 2,
-    title: "Wordpress Developer at Outkos",
-    desc: "Creating websites for clients around the world is the core responsibility of my role as a WordPress developer. Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work.",
+    title: "WorkExperienceTitle2",
+    desc: "WorkExperienceDesc2",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Wordpress Developer at IT2Pi",
-    desc: "-Designing, creating, and maintaining websites for clients around the world is the core responsibility of my role as a WordPress developer. -Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work. -I collaborate with designers to create responsive courses using Adobe Captivate, ensuring smooth LMS integration to meet the needs of prestigious clients worldwide.",
+    title: "WorkExperienceTitle3",
+    desc: "WorkExperienceDesc3",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Freelance Web Developer",
-    desc: "As a freelance web developer, I specialize in creating stunning designs and high-performance websites customized to the unique needs of businesses worldwide. From simple concepts to launching them online for the world, I bring ideas to life, helping companies establish a strong online presence.",
+    title: "WorkExperienceTitle4",
+    desc: "WorkExperienceDesc4",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

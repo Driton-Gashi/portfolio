@@ -1,11 +1,53 @@
 {
   "NotFoundPage": {
-    "title": "Hello World"
+    "title": "Hallo Welt"
   },
   "Menu": {
     "home": "Startseite",
     "about": "Über mich",
     "projects": "Projekte",
     "contact": "Kontakt"
+  },
+  "Hero": {
+    "heyImDriton": "Hallo, ich bin Driton Gashi – Softwareentwickler",
+    "HereYouCanCheckOut": "Hier kannst du sehen, woran ich arbeite.",
+    "ITryMyBestToCreateThingsWith": "Ich gebe mein Bestes, um Dinge mit ❤ zu erschaffen",
+    "ShowMyWork": "Zeige meine Arbeit"
+  },
+  "GridItems": {
+    "GridItemTitle1": "Ich bin ein Softwareentwickler mit über 2 Jahren Erfahrung in der Webentwicklung",
+    "GridItemTitle2": "Ich habe mit verschiedenen Kunden weltweit gearbeitet",
+    "GridItemTitle3": "Mein Tech-Stack",
+    "GridItemDescription3": "Ständig am Weiterentwickeln",
+    "GridItemTitle4": "Technikbegeistert mit Leidenschaft für Webentwicklung.",
+    "GridItemTitle5": "Suche derzeit eine Stelle als Softwareentwickler",
+    "GridItemDescription5": "offen für neue Möglichkeiten",
+    "GridItemTitle6": "Willst du ein Projekt mit mir starten?"
+  },
+  "RecentProjects": {
+    "ASmallSelectionOf": "Eine kleine Auswahl an",
+    "RecentProjects": "aktuellen Projekten",
+    "CheckLiveSite": "Live-Seite ansehen",
+    "Normholz-AM": "Normholz-AM ist ein Türen- und Bodenbauunternehmen mit Sitz in Bretzfeld, Deutschland",
+    "BerishaMaler": "Berisha Maler GmbH ist ein Bauunternehmen mit Sitz in Österreich"
+  },
+  "Experience": {
+    "My": "Meine",
+    "WorkExperience": "Berufserfahrung",
+    "WorkExperienceTitle1": "Softwareentwickler bei Pabau",
+    "WorkExperienceDesc1": "Als Softwareentwickler bei Pabau war ich Teil eines Teams zur Pflege und Weiterentwicklung unserer Webanwendung, die von Tausenden von Kunden weltweit genutzt wird. Ich war für technische Herausforderungen unter Zeitdruck verantwortlich. Kommunikation war entscheidend für die Zusammenarbeit mit QA- und Projektteams.",
+    "WorkExperienceTitle2": "WordPress-Entwickler bei Outkos",
+    "WorkExperienceDesc2": "Die Erstellung von Webseiten für Kunden weltweit ist meine Hauptaufgabe als WordPress-Entwickler. Die enge Zusammenarbeit mit Designern zur Umsetzung ihrer kreativen Vision ist ein wichtiger Teil meiner Arbeit.",
+    "WorkExperienceTitle3": "WordPress-Entwickler bei IT2Pi",
+    "WorkExperienceDesc3": "-Webseiten entwerfen, erstellen und pflegen gehört zu meinen Hauptaufgaben. -Zusammenarbeit mit Designern zur Sicherstellung eines konsistenten Designs. -Ich arbeite mit Designern an interaktiven Kursen mit Adobe Captivate und sorge für eine reibungslose LMS-Integration.",
+    "WorkExperienceTitle4": "Freelance-Webentwickler",
+    "WorkExperienceDesc4": "Als freiberuflicher Webentwickler gestalte ich individuelle, leistungsstarke Webseiten, die Unternehmen weltweit helfen, ihre Online-Präsenz aufzubauen."
+  },
+  "Footer": {
+    "ReadyToTake": "Bereit, deine",
+    "your": "digitale Präsenz",
+    "DigitalPresence": "auf das nächste Level zu bringen?",
+    "ReachOutToMe": "Kontaktiere mich noch heute, um zu besprechen, wie ich dir helfen kann, deine Ziele zu erreichen.",
+    "LetsGetInTouch": "Lass uns in Kontakt treten"
   }
 }

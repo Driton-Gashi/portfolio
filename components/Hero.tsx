@@ -4,12 +4,14 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface P {
   hasUsedNavbar: boolean;
 }
 
 const Hero = ({ hasUsedNavbar }: P) => {
+  const t = useTranslations("Hero");
   return (
     <div className={`pb-20 ${hasUsedNavbar ? "pt-[27rem]" : "pt-36"}`}>
       <div>
@@ -37,21 +39,21 @@ const Hero = ({ hasUsedNavbar }: P) => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Hey, I&apos;m Driton Gashi - Software Engineer
+            {t("heyImDriton")}
           </p>
 
           <TextGenerateEffect
-            words="Here, you can check out what I'm working on."
+            words={t("HereYouCanCheckOut")}
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            I try my best to create things with ❤
+            {t("ITryMyBestToCreateThingsWith")}
           </p>
 
           <Link href="#projects">
             <MagicButton
-              title="Show my work"
+              title={t("ShowMyWork")}
               icon={<FaLocationArrow />}
               position="right"
             />

@@ -1,11 +1,53 @@
 {
   "NotFoundPage": {
-    "title": "Hello World"
+    "title": "Përshëndetje Botë"
   },
   "Menu": {
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact"
+    "home": "Ballina",
+    "about": "Rreth Meje",
+    "projects": "Projektet",
+    "contact": "Kontakti"
+  },
+  "Hero": {
+    "heyImDriton": "Tungjatjeta, unë jam Driton Gashi - Inxhinier Softuerik",
+    "HereYouCanCheckOut": "Këtu mund të shikosh çfarë po punoj.",
+    "ITryMyBestToCreateThingsWith": "Përpiqem të krijoj gjëra me ❤",
+    "ShowMyWork": "Shfaq punën time"
+  },
+  "GridItems": {
+    "GridItemTitle1": "Jam Inxhinier Softuerik me mbi 2 vite përvojë në Zhvillimin e Uebit",
+    "GridItemTitle2": "Kam punuar me klientë të ndryshëm anembanë botës",
+    "GridItemTitle3": "Teknologjitë që përdor",
+    "GridItemDescription3": "Always advancing",
+    "GridItemTitle4": "Entuziast i teknologjisë me pasion për zhvillimin e uebit.",
+    "GridItemTitle5": "Aktualisht në kërkim për pozitë si Inxhinier Softuerik",
+    "GridItemDescription5": "i gatshëm për punë",
+    "GridItemTitle6": "A dëshiron të fillojmë një projekt së bashku?"
+  },
+  "RecentProjects": {
+    "ASmallSelectionOf": "Një përzgjedhje e vogël e",
+    "RecentProjects": "projekteve të fundit",
+    "CheckLiveSite": "Shiko faqen aktive",
+    "Normholz-AM": "Normholz-AM është kompani për dyer dhe dysheme në Bretzfeld, Gjermani",
+    "BerishaMaler": "Berisha Maler GmbH është kompani ndërtimi në Austri"
+  },
+  "Experience": {
+    "My": "Përvoja ime",
+    "WorkExperience": "përvoja e punës",
+    "WorkExperienceTitle1": "Inxhinier Softuerik në Pabau",
+    "WorkExperienceDesc1": "Si Inxhinier Softuerik në Pabau, kam punuar në një ekip për të mirëmbajtur dhe zhvilluar aplikacionin tonë të uebit, që përdoret nga mijëra klientë globalisht. Kam qenë përgjegjës për sfida teknike nën presionin e afateve. Komunikimi ka qenë thelbësor për bashkëpunim me ekipet QA dhe Projektuese për rezultate cilësore.",
+    "WorkExperienceTitle2": "Zhvillues WordPress në Outkos",
+    "WorkExperienceDesc2": "Krijimi i faqeve të uebit për klientët globalisht është përgjegjësia kryesore ime si zhvillues WordPress. Bashkëpunimi me dizajnerët për të siguruar përputhje në dizajn është pjesë kyçe e punës sime.",
+    "WorkExperienceTitle3": "Zhvillues WordPress në IT2Pi",
+    "WorkExperienceDesc3": "-Dizajnimi, krijimi dhe mirëmbajtja e faqeve të internetit për klientë globalisht është përgjegjësia ime kryesore. -Bashkëpunoj me dizajnerë për përputhje të dizajnit dhe implementim të ideve të tyre. -Krijoj kurse interaktive me Adobe Captivate dhe siguroj integrim me LMS për klientë prestigjiozë.",
+    "WorkExperienceTitle4": "Zhvillues Uebi Freelancer",
+    "WorkExperienceDesc4": "Si zhvillues freelancer, krijoj dizajne të bukura dhe faqe të fuqishme të personalizuara për bizneset anembanë botës. I sjell idetë në realitet dhe ndihmoj në krijimin e prezencës online."
+  },
+  "Footer": {
+    "ReadyToTake": "Gati të çosh",
+    "your": "prezencën tënde",
+    "DigitalPresence": "digjitale në një nivel tjetër?",
+    "ReachOutToMe": "Kontakto me mua sot për të diskutuar si mund të ndihmoj që t’i arrish qëllimet e tua.",
+    "LetsGetInTouch": "Cakto Takim Online"
   }
 }

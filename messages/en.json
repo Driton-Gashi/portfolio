@@ -1,11 +1,53 @@
 {
-  "NotFoundPage":{
+  "NotFoundPage": {
     "title": "Hello World"
   },
-    "Menu": {
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact"
-    }
+  "Menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "heyImDriton": "Hey, I'm Driton Gashi - Software Engineer",
+    "HereYouCanCheckOut": "Here, you can check out what I'm working on.",
+    "ITryMyBestToCreateThingsWith": "I try my best to create things with ❤",
+    "ShowMyWork": "Show my work"
+  },
+  "GridItems": {
+    "GridItemTitle1": "I'm a Software Engineer with 2+ years of experience in Web Development",
+    "GridItemTitle2": "Worked with different clients around the world",
+    "GridItemTitle3": "My tech stack",
+    "GridItemDescription3": "I constantly try to improve",
+    "GridItemTitle4": "Tech enthusiast with a passion for website development.",
+    "GridItemTitle5": "Currently looking for a Software Engineer position",
+    "GridItemDescription5": "open to work",
+    "GridItemTitle6": "Do you want to start a project together?"
+  },
+  "RecentProjects": {
+    "ASmallSelectionOf": "A small selection of",
+    "RecentProjects": "recent projects",
+    "CheckLiveSite": "Check Live Site",
+    "Normholz-AM": "Normholz-AM a Doors and Floor construction company based in Bretzfeld, Germany",
+    "BerishaMaler": "Berisha Maler Gmbh is a construction company based in Austria"
+  },
+  "Experience": {
+    "My": "My",
+    "WorkExperience": "work experience",
+    "WorkExperienceTitle1": "Software Engineer at Pabau",
+    "WorkExperienceDesc1": "As a Software Engineer at Pabau, I worked as part of a team to maintain and develop our web application, used by thousands of clients worldwide. I was responsible for addressing technical challenges under the pressure of deadlines. Communication was a key aspect of my role, as collaboration with the QA and Project teams was essential to deliver high-quality results.",
+    "WorkExperienceTitle2": "WordPress Developer at Outkos",
+    "WorkExperienceDesc2": "Creating websites for clients around the world is the core responsibility of my role as a WordPress developer. Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work.",
+    "WorkExperienceTitle3": "WordPress Developer at IT2Pi",
+    "WorkExperienceDesc3": "-Designing, creating, and maintaining websites for clients around the world is the core responsibility of my role as a WordPress developer. -Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work. -I collaborate with designers to create responsive courses using Adobe Captivate, ensuring smooth LMS integration to meet the needs of prestigious clients worldwide.",
+    "WorkExperienceTitle4": "Freelance Web Developer",
+    "WorkExperienceDesc4": "As a freelance web developer, I specialize in creating stunning designs and high-performance websites customized to the unique needs of businesses worldwide. From simple concepts to launching them online for the world, I bring ideas to life, helping companies establish a strong online presence."
+  },
+  "Footer": {
+    "ReadyToTake": "Ready to take",
+    "your": "your",
+    "DigitalPresence": "digital presence to the next level?",
+    "ReachOutToMe": "Reach out to me today and let's discuss how I can help you achieve your goals.",
+    "LetsGetInTouch": "Let's get in touch"
   }
+}

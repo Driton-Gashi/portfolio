@@ -6,10 +6,12 @@ import Image from "next/image";
 import { projects as initialProjects, moreProjects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import MagicButton from "./MagicButton";
+import { useTranslations } from "next-intl";
 
 const BATCH_SIZE = 2;
 
 const RecentProjects = () => {
+  const t = useTranslations("RecentProjects");
   const [displayedProjects, setDisplayedProjects] = useState(initialProjects);
   const [remainingProjects, setRemainingProjects] = useState(moreProjects);
 
@@ -23,8 +25,8 @@ const RecentProjects = () => {
   return (
     <div id="projects" className="py-20">
       <h3 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        {t("ASmallSelectionOf")}{" "}
+        <span className="text-purple">{t("RecentProjects")}</span>
       </h3>
 
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
@@ -58,7 +60,7 @@ const RecentProjects = () => {
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{ color: "#BEC1DD", margin: "1vh 0" }}
               >
-                {item.des}
+                {item.des ? t(item.des) : "..."}
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
@@ -69,7 +71,13 @@ const RecentProjects = () => {
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{ transform: `translateX(-${5 * index + 2}px)` }}
                     >
-                      <img src={icon} alt="icon" className="p-2" />
+                      <Image
+                        width={38}
+                        height={38}
+                        src={icon}
+                        alt="icon"
+                        className="p-2"
+                      />
                     </div>
                   ))}
                 </div>
@@ -79,9 +87,9 @@ const RecentProjects = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                    className="flex lg:text-base md:text-xs text-sm text-purple"
                   >
-                    Check Live Site
+                    {t("CheckLiveSite")}
                   </a>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

@@ -2,8 +2,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+  const year = new Date().getFullYear();
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -19,12 +22,11 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h3 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          {t("ReadyToTake")} <span className="text-purple">{t("your")}</span>{" "}
+          {t("DigitalPresence")}
         </h3>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          {t("ReachOutToMe")}
         </p>
         <a
           target="_blank"
@@ -32,7 +34,7 @@ const Footer = () => {
           href="https://cal.com/dritongashi"
         >
           <MagicButton
-            title="Let's get in touch"
+            title={t("LetsGetInTouch")}
             icon={<FaLocationArrow />}
             position="right"
           />
@@ -40,7 +42,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Driton Gashi
+          Copyright © {year} Driton Gashi
         </p>
 
         <div className="flex items-center md:gap-3 gap-6 mt-6 md:mt-0">
