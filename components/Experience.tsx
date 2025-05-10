@@ -1,8 +1,6 @@
-import React from "react";
-
 import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
 import { useTranslations } from "next-intl";
+import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   const t = useTranslations("Experience");

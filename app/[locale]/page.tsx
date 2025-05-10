@@ -1,16 +1,16 @@
 "use client";
 
-import { navItems } from "@/data";
-import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
+import Grid from "@/components/Grid";
+import Hero from "@/components/Hero";
+import { navItems } from "@/data";
 // import Clients from "@/components/Clients";
 // import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
+import GoTopBtn from "@/components/GoTopBtn";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { useState } from "react";
-import GoTopBtn from "@/components/GoTopBtn";
 
 const Home = () => {
   const [hasUsedNavbar, setHasUsedNavbar] = useState<boolean>(false);

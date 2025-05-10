@@ -1,10 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
 
 interface P {
   hasUsedNavbar: boolean;

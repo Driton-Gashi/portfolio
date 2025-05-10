@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { TERipple } from "tw-elements-react";
 
 export default function GoTopBtn(): JSX.Element {

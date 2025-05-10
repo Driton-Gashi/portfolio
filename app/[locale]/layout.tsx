@@ -4,9 +4,9 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "../provider";
 
+import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"] });
 

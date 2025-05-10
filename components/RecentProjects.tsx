@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { FaLocationArrow, FaEllipsis } from "react-icons/fa6";
-import Image from "next/image";
 import { projects as initialProjects, moreProjects } from "@/data";
-import { PinContainer } from "./ui/Pin";
-import MagicButton from "./MagicButton";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useState } from "react";
+import { FaEllipsis, FaLocationArrow } from "react-icons/fa6";
+import MagicButton from "./MagicButton";
+import { PinContainer } from "./ui/Pin";
 
 const BATCH_SIZE = 2;
 

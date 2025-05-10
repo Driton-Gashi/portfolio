@@ -1,8 +1,8 @@
-import { FaLocationArrow } from "react-icons/fa6";
-import Image from "next/image";
 import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { FaLocationArrow } from "react-icons/fa6";
+import MagicButton from "./MagicButton";
 
 const Footer = () => {
   const t = useTranslations("Footer");
