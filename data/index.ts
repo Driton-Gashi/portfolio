@@ -167,8 +167,27 @@ export const projects = [
     ],
     link: "https://embel-home.de/",
   },
+
   {
     id: 8,
+    title: "Cimerat App",
+    des: "Cimerat App made with Next.js, Express.js, and MySql.",
+    img: "/projects/cimerat-app.png",
+    iconLists: [
+      "/techs/react.svg",
+      "/techs/express.svg",
+      "/techs/nodejs.svg",
+      "/techs/mysql.svg",
+      "/techs/typescript.svg",
+      "/techs/tailwind.svg",
+    ],
+    link: "https://cimerat.dritongashi.com/",
+  },
+];
+
+export const moreProjects = [
+  {
+    id: 9,
     title: "Bauunternehmung AR",
     des: "",
     img: "/projects/Bauunternehmung-AR.png",
@@ -182,23 +201,6 @@ export const projects = [
     link: "https://bauunternehmung-ar.de/",
   },
 ];
-
-// export const moreProjects = [
-//   {
-//     id: 8,
-//     title: "Bauunternehmung AR",
-//     des: "",
-//     img: "/projects/Bauunternehmung-AR.png",
-//     iconLists: [
-//       "/techs/wordpress.svg",
-//       "/techs/elementor.svg",
-//       "/techs/css.svg",
-//       "techs/js.svg",
-//       "/techs/yoast.svg",
-//     ],
-//     link: "https://bauunternehmung-ar.de/",
-//   },
-// ];
 
 export const testimonials = [
   {
