@@ -183,22 +183,22 @@ export const projects = [
   },
 ];
 
-export const moreProjects = [
-  {
-    id: 8,
-    title: "Bauunternehmung AR",
-    des: "",
-    img: "/projects/Bauunternehmung-AR.png",
-    iconLists: [
-      "/techs/wordpress.svg",
-      "/techs/elementor.svg",
-      "/techs/css.svg",
-      "techs/js.svg",
-      "/techs/yoast.svg",
-    ],
-    link: "https://bauunternehmung-ar.de/",
-  },
-];
+// export const moreProjects = [
+//   {
+//     id: 8,
+//     title: "Bauunternehmung AR",
+//     des: "",
+//     img: "/projects/Bauunternehmung-AR.png",
+//     iconLists: [
+//       "/techs/wordpress.svg",
+//       "/techs/elementor.svg",
+//       "/techs/css.svg",
+//       "techs/js.svg",
+//       "/techs/yoast.svg",
+//     ],
+//     link: "https://bauunternehmung-ar.de/",
+//   },
+// ];
 
 export const testimonials = [
   {
