@@ -1,4 +1,5 @@
 "use client";
+import { quickLinks } from "@/data";
 import { cn } from "@/lib/utils";
 import {
   AnimatePresence,
@@ -9,7 +10,6 @@ import {
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Dispatch, SetStateAction, useState } from "react";
-import LanguageSwitcher from "../LanguageSwitcher";
 
 interface P {
   setHasUsedNavbar: Dispatch<SetStateAction<boolean>>;
@@ -85,12 +85,28 @@ export const FloatingNav = ({ setHasUsedNavbar, navItems, className }: P) => {
             <span className=" text-sm !cursor-pointer">{t(navItem.name)}</span>
           </Link>
         ))}
+        <div className="hidden sm:block h-5 w-px bg-white/[.15]" />
+        <a
+          href={quickLinks.cv}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden sm:inline-flex items-center rounded-full border border-white/[.2] px-3 py-1 text-xs text-white/80 hover:text-white hover:border-white/[.4] transition"
+        >
+          {t("Nav.cv") || "CV"}
+        </a>
+        <a
+          href={quickLinks.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden sm:inline-flex items-center rounded-full border border-white/[.2] px-3 py-1 text-xs text-white/80 hover:text-white hover:border-white/[.4] transition"
+        >
+          {t("Nav.github") || "GitHub"}
+        </a>
         {/* remove this login btn */}
         {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
           <span>Login</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button> */}
-        <LanguageSwitcher />
       </motion.div>
     </AnimatePresence>
   );

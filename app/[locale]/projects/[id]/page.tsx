@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { FaLocationArrow, FaArrowLeft } from "react-icons/fa6";
 import Footer from "@/components/Footer";
-import GoTopBtn from "@/components/GoTopBtn";
+import FloatingLocaleSwitcher from "@/components/FloatingLocaleSwitcher";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { useParams } from "next/navigation";
 import { useState } from "react";
@@ -51,7 +51,10 @@ const ProjectDetailPage = () => {
     return (
       <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
         <div className="max-w-7xl w-full">
-          <FloatingNav setHasUsedNavbar={setHasUsedNavbar} navItems={navItems} />
+          <FloatingNav
+            setHasUsedNavbar={setHasUsedNavbar}
+            navItems={navItems}
+          />
           <div className="py-20 text-center">
             <h1 className="heading mb-4">
               {t("ProjectNotFound") || "Project Not Found"}
@@ -142,9 +145,7 @@ const ProjectDetailPage = () => {
               </h3>
               <div className="space-y-5 text-sm">
                 <div className="flex items-center justify-between gap-6">
-                  <span className="text-white/60">
-                    {t("Type") || "Type"}
-                  </span>
+                  <span className="text-white/60">{t("Type") || "Type"}</span>
                   <span className="text-white">{getProjectType(techs)}</span>
                 </div>
                 <div className="flex items-center justify-between gap-6">
@@ -207,7 +208,7 @@ const ProjectDetailPage = () => {
           </div>
         </div>
         <Footer />
-        <GoTopBtn />
+        <FloatingLocaleSwitcher />
       </div>
     </main>
   );

@@ -8,6 +8,10 @@
     "projects": "Projekte",
     "contact": "Kontakt"
   },
+  "Nav": {
+    "cv": "Lebenslauf",
+    "github": "GitHub"
+  },
   "Hero": {
     "heyImDriton": "Hallo, ich bin Driton Gashi – Softwareentwickler",
     "HereYouCanCheckOut": "Hier kannst du sehen, woran ich arbeite.",

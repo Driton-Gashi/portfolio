@@ -5,6 +5,11 @@ export const navItems = [
   { name: "Menu.contact", link: "#contact" },
 ];
 
+export const quickLinks = {
+  cv: "/Driton_Gashi_CV.pdf",
+  github: "https://github.com/Driton-Gashi",
+};
+
 export const gridItems = [
   {
     id: 1,

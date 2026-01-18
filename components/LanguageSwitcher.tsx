@@ -1,19 +1,17 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const locales = ["en", "sq", "de"];
 
 export default function LanguageSwitcher() {
-  const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
 
   return (
-    <div className="absolute flex gap-3 top-0 -translate-y-[125%] xs:translate-y-0 xs:static xs:gap-0">
+    <div className="flex items-center rounded-full border border-white/[.2] p-1 gap-1">
       {locales.map((locale) => {
         const newPathname = pathname.replace(`/${currentLocale}`, `/${locale}`);
 
@@ -21,19 +19,14 @@ export default function LanguageSwitcher() {
           <Link
             key={locale}
             href={newPathname}
-            className={`px-2 py-1 rounded text-xs hover:opacity-100 ${
-              currentLocale === locale ? "" : "opacity-40"
+            aria-label={`Switch language to ${locale.toUpperCase()}`}
+            className={`px-2 py-1 rounded-full text-[11px] tracking-wide uppercase transition ${
+              currentLocale === locale
+                ? "bg-white/10 text-white"
+                : "text-white/50 hover:text-white hover:bg-white/5"
             }`}
           >
-            {
-              <Image
-                className="w-7 xs:w-6"
-                width={20}
-                height={20}
-                src={`/${locale}.svg`}
-                alt=""
-              />
-            }
+            {locale}
           </Link>
         );
       })}

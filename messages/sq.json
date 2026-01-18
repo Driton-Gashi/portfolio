@@ -8,6 +8,10 @@
     "projects": "Projektet",
     "contact": "Kontakti"
   },
+  "Nav": {
+    "cv": "CV",
+    "github": "GitHub"
+  },
   "Hero": {
     "heyImDriton": "Përshëndetje, unë jam Driton Gashi – Inxhinier Softuerik",
     "HereYouCanCheckOut": "Këtu mund të shikosh disa nga projektet dhe puna ime.",
