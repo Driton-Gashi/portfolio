@@ -13,14 +13,41 @@ const BATCH_SIZE = 2;
 
 const RecentProjects = () => {
   const t = useTranslations("RecentProjects");
-  const [displayedProjects, setDisplayedProjects] = useState(initialProjects);
-  const [remainingProjects, setRemainingProjects] = useState(moreProjects);
+  const [activeFilter, setActiveFilter] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(initialProjects.length);
+
+  const allProjects = [...initialProjects, ...moreProjects];
+  const filterOptions = [
+    { id: "All", label: "All" },
+    { id: "WordPress", label: "WordPress" },
+    { id: "Next.js", label: "Next.js" },
+    { id: "React", label: "React" },
+    { id: "Static", label: "Static Sites" },
+  ];
+
+  const filteredProjects =
+    activeFilter === "All"
+      ? allProjects
+      : allProjects.filter((project) => {
+          const techs = project.techs || [];
+          if (activeFilter === "WordPress") return techs.includes("WordPress");
+          if (activeFilter === "Next.js") return techs.includes("Next.js");
+          if (activeFilter === "React") return techs.includes("React");
+          if (activeFilter === "Static") return techs.includes("HTML");
+          return true;
+        });
+  const displayedProjects = filteredProjects.slice(0, visibleCount);
+  const canShowMore = visibleCount < filteredProjects.length;
+
+  const handleFilterChange = (filter: string) => {
+    setActiveFilter(filter);
+    setVisibleCount(initialProjects.length);
+  };
 
   const handleShowMore = () => {
-    const nextBatch = remainingProjects.slice(0, BATCH_SIZE);
-    const remaining = remainingProjects.slice(BATCH_SIZE);
-    setDisplayedProjects((prev) => [...prev, ...nextBatch]);
-    setRemainingProjects(remaining);
+    setVisibleCount((prev) =>
+      Math.min(prev + BATCH_SIZE, filteredProjects.length)
+    );
   };
 
   return (
@@ -30,6 +57,23 @@ const RecentProjects = () => {
         <span className="text-purple">{t("RecentProjects")}</span>
       </h3>
 
+      <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
+        {filterOptions.map((filter) => (
+          <button
+            key={filter.id}
+            type="button"
+            onClick={() => handleFilterChange(filter.id)}
+            className={`rounded-full px-4 py-2 text-sm transition border ${
+              activeFilter === filter.id
+                ? "bg-[#10132E] text-white border-white/[.2]"
+                : "bg-transparent text-white/70 border-white/[.12] hover:text-white hover:border-white/[.3]"
+            }`}
+          >
+            {filter.label}
+          </button>
+        ))}
+      </div>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {displayedProjects.map((item) => (
           <div
@@ -38,19 +82,25 @@ const RecentProjects = () => {
           >
             <PinContainer title={item.title} href={`/projects/${item.id}`}>
               <Link href={`/projects/${item.id}`}>
-                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden aspect-video mb-10">
                   <div
-                    className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                    className="absolute inset-0 overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <Image width={552} height={330} src="/bg.png" alt="bgimg" />
+                    <Image
+                      fill
+                      src="/bg.png"
+                      alt="bgimg"
+                      className="object-cover"
+                      sizes="(min-width: 1024px) 384px, 80vw"
+                    />
                   </div>
                   <Image
-                    width={800}
-                    height={512}
+                    fill
                     src={item.img}
                     alt="cover"
-                    className="z-10 absolute bottom-0"
+                    className="z-10 object-contain p-4"
+                    sizes="(min-width: 1024px) 384px, 80vw"
                   />
                 </div>
 
@@ -98,9 +148,7 @@ const RecentProjects = () => {
       </div>
 
       <div
-        className={`text-center mt-10 ease-in ${
-          remainingProjects.length === 0 && "fade-in-0 hidden"
-        }`}
+        className={`text-center mt-10 ease-in ${!canShowMore && "fade-in-0 hidden"}`}
       >
         <MagicButton
           title="Show More"

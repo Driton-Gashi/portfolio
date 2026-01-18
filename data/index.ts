@@ -74,6 +74,7 @@ export const projects = [
     title: "Normholz AM",
     des: "Normholz-AM",
     img: "/projects/Normholz-AM.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -88,6 +89,7 @@ export const projects = [
     title: "Berisha Maler Gmbh",
     des: "BerishaMaler",
     img: "/projects/Berisha-Maler.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -102,6 +104,7 @@ export const projects = [
     title: "Dital Legal",
     des: "",
     img: "/projects/Ditar-Legal.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -116,6 +119,7 @@ export const projects = [
     title: "Dital Compliance",
     des: "",
     img: "/projects/Ditar-Compliance.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -130,6 +134,7 @@ export const projects = [
     title: "ITM Installation",
     des: "",
     img: "/projects/itm-installation.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -144,6 +149,7 @@ export const projects = [
     title: "Kanzlei Am Kureck",
     des: "",
     img: "/projects/Kanzlei-am-Kureck.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -158,6 +164,7 @@ export const projects = [
     title: "Embel Home",
     des: "",
     img: "/projects/Embel-Home.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
@@ -171,8 +178,9 @@ export const projects = [
   {
     id: 8,
     title: "Cimerat App",
-    des: "Cimerat App made with Next.js, Express.js, and MySql.",
+    des: "Cimerat App made with React, Express.js, and MySql.",
     img: "/projects/cimerat-app.png",
+    techs: ["React", "Express", "Node.js", "MySQL", "TypeScript", "Tailwind"],
     iconLists: [
       "/techs/react.svg",
       "/techs/express.svg",
@@ -183,14 +191,56 @@ export const projects = [
     ],
     link: "https://cimerat.dritongashi.com/",
   },
+
+  {
+    id: 9,
+    title: "Movie App",
+    des: "Movie App made with Next.js, Express.js, and MySql.",
+    img: "/projects/movie-app.webp",
+    techs: ["Next.js", "Express", "MySQL", "TypeScript", "Tailwind"],
+    iconLists: [
+      "/techs/nextjs.svg",
+      "/techs/express.svg",
+      "/techs/mysql.svg",
+      "/techs/typescript.svg",
+      "/techs/tailwind.svg",
+      "/techs/wordpress.svg",
+    ],
+    link: "https://movie.dritongashi.com/",
+  },
+  {
+    id: 10,
+    title: "Food Delivery App",
+    des: "Food Delivery Appmade with Next.js, Express.js, and MySql.",
+    img: "/projects/food-app.png",
+    techs: ["Next.js", "Express", "MySQL", "TypeScript", "Tailwind"],
+    iconLists: [
+      "/techs/nextjs.svg",
+      "/techs/express.svg",
+      "/techs/mysql.svg",
+      "/techs/typescript.svg",
+      "/techs/tailwind.svg",
+    ],
+    link: "https://movie.dritongashi.com/",
+  },
+  {
+    id: 11,
+    title: "Movie Website, Frontend only",
+    des: "Movie Website made with html, css, and javascript. Frontend only. No backend. with javascript self made components.",
+    img: "/projects/movie-website-ick.webp",
+    techs: ["HTML", "CSS", "JavaScript"],
+    iconLists: ["/techs/html.svg", "/techs/css.svg", "/techs/js.svg"],
+    link: "https://ickosovo.netlify.app/",
+  },
 ];
 
 export const moreProjects = [
   {
-    id: 9,
+    id: 12,
     title: "Bauunternehmung AR",
     des: "",
     img: "/projects/Bauunternehmung-AR.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
       "/techs/elementor.svg",
