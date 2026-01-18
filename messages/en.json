@@ -55,7 +55,11 @@
     "ITMInstallation": "ITM Installation site showcasing service areas and recent work.",
     "KanzleiAmKureck": "Law firm website with clear practice areas and contact flow.",
     "EmbelHome": "Embel Home brand site featuring products and company story.",
-    "BauunternehmungAR": "Bauunternehmung AR construction site with project highlights."
+    "BauunternehmungAR": "Bauunternehmung AR construction site with project highlights.",
+    "CimeratAppDesc": "Cimerat App made with React, Express.js, and MySql.",
+    "MovieAppDesc": "Movie App made with Next.js, Express.js, and MySql.",
+    "FoodDeliveryAppDesc": "Food Delivery App made with Next.js, Express.js, and MySql.",
+    "TregimiImDesc": "Website for a company that offers customized books for kids."
   },
   "Experience": {
     "My": "My",

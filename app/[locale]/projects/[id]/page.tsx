@@ -1,6 +1,6 @@
 "use client";
 
-import { projects, moreProjects, navItems } from "@/data";
+import { projects, navItems } from "@/data";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -25,7 +25,7 @@ const ProjectDetailPage = () => {
   const params = useParams();
   const id = params?.id as string;
   const t = useTranslations("RecentProjects");
-  const allProjects = [...projects, ...moreProjects];
+  const allProjects = [...projects];
   const project = allProjects.find((p) => p.id === parseInt(id || "0")) || null;
 
   const [hasUsedNavbar, setHasUsedNavbar] = useState<boolean>(false);

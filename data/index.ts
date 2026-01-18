@@ -183,7 +183,7 @@ export const projects = [
   {
     id: 8,
     title: "Cimerat App",
-    des: "Cimerat App made with React, Express.js, and MySql.",
+    des: "CimeratAppDesc",
     img: "/projects/cimerat-app.png",
     techs: ["React", "Express", "Node.js", "MySQL", "TypeScript", "Tailwind"],
     iconLists: [
@@ -200,7 +200,7 @@ export const projects = [
   {
     id: 9,
     title: "Movie App",
-    des: "Movie App made with Next.js, Express.js, and MySql.",
+    des: "MovieAppDesc",
     img: "/projects/movie-app.webp",
     techs: ["Next.js", "Express", "MySQL", "TypeScript", "Tailwind"],
     iconLists: [
@@ -216,7 +216,7 @@ export const projects = [
   {
     id: 10,
     title: "Food Delivery App",
-    des: "Food Delivery Appmade with Next.js, Express.js, and MySql.",
+    des: "FoodDeliveryAppDesc",
     img: "/projects/food-app.png",
     techs: ["Next.js", "Express", "MySQL", "TypeScript", "Tailwind"],
     iconLists: [
@@ -230,16 +230,20 @@ export const projects = [
   },
   {
     id: 11,
-    title: "Movie Website, Frontend only",
-    des: "Movie Website made with html, css, and javascript. Frontend only. No backend. with javascript self made components.",
-    img: "/projects/movie-website-ick.webp",
-    techs: ["HTML", "CSS", "JavaScript"],
-    iconLists: ["/techs/html.svg", "/techs/css.svg", "/techs/js.svg"],
-    link: "https://ickosovo.netlify.app/",
+    title: "Tregimi Im",
+    des: "TregimiImDesc",
+    img: "/projects/tregimi-im.png",
+    techs: ["WordPress", "Elementor", "CSS", "JavaScript", "PHP", "ACF"],
+    iconLists: [
+      "/techs/wordpress.svg",
+      "/techs/elementor.svg",
+      "/techs/css.svg",
+      "/techs/js.svg",
+      "/techs/php.svg",
+      "/techs/acf.svg",
+    ],
+    link: "https://tregimi.net/",
   },
-];
-
-export const moreProjects = [
   {
     id: 12,
     title: "Bauunternehmung AR",

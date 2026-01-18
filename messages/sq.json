@@ -55,7 +55,11 @@
     "ITMInstallation": "Faqe prezantuese për ITM Installation me shërbimet dhe projektet e realizuara.",
     "KanzleiAmKureck": "Faqe për zyrë ligjore me strukturë të qartë dhe kontakt të lehtë.",
     "EmbelHome": "Faqe për Embel Home që prezanton produktet dhe historinë e kompanisë.",
-    "BauunternehmungAR": "Faqe për Bauunternehmung AR me fokus në projektet e ndërtimit."
+    "BauunternehmungAR": "Faqe për Bauunternehmung AR me fokus në projektet e ndërtimit.",
+    "CimeratAppDesc": "Cimerat App made with React, Express.js, and MySql.",
+    "MovieAppDesc": "Movie App made with Next.js, Express.js, and MySql.",
+    "FoodDeliveryAppDesc": "Food Delivery App made with Next.js, Express.js, and MySql.",
+    "TregimiImDesc": "Website for a company that offers customized books for kids."
   },
   "Experience": {
     "My": "Përvoja ime",
