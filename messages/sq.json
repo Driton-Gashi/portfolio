@@ -1,6 +1,6 @@
 {
   "NotFoundPage": {
-    "title": "Përshëndetje Botë"
+    "title": "Faqja nuk u gjet"
   },
   "Menu": {
     "home": "Ballina",
@@ -9,61 +9,67 @@
     "contact": "Kontakti"
   },
   "Hero": {
-    "heyImDriton": "Tungjatjeta, unë jam Driton Gashi - Inxhinier Softuerik",
-    "HereYouCanCheckOut": "Këtu mund të shikosh çfarë po punoj.",
-    "ITryMyBestToCreateThingsWith": "Përpiqem të krijoj gjëra me ❤",
-    "ShowMyWork": "Shfaq punën time"
+    "heyImDriton": "Përshëndetje, unë jam Driton Gashi – Inxhinier Softuerik",
+    "HereYouCanCheckOut": "Këtu mund të shikosh disa nga projektet dhe puna ime.",
+    "ITryMyBestToCreateThingsWith": "Përpiqem të krijoj zgjidhje cilësore me pasion ❤",
+    "ShowMyWork": "Shiko punën time"
   },
   "GridItems": {
-    "GridItemTitle1": "Jam Inxhinier Softuerik me mbi 2 vite përvojë në Zhvillimin e Uebit",
-    "GridItemTitle2": "Kam punuar me klientë të ndryshëm anembanë botës",
+    "GridItemTitle1": "Inxhinier Softuerik me mbi 2 vite përvojë në zhvillimin e uebit",
+    "GridItemTitle2": "Eksperiencë pune me klientë nga vende të ndryshme të botës",
     "GridItemTitle3": "Teknologjitë që përdor",
-    "GridItemDescription3": "Always advancing",
-    "GridItemTitle4": "Entuziast i teknologjisë me pasion për zhvillimin e uebit.",
-    "GridItemTitle5": "Aktualisht në kërkim për pozitë si Inxhinier Softuerik",
-    "GridItemDescription5": "i gatshëm për punë",
-    "GridItemTitle6": "A dëshiron të fillojmë një projekt së bashku?"
+    "GridItemDescription3": "Në zhvillim dhe përmirësim të vazhdueshëm",
+    "GridItemTitle4": "Entuziast i teknologjisë me fokus në zhvillimin modern të uebit",
+    "GridItemTitle5": "Aktualisht në kërkim të një pozite si Inxhinier Softuerik",
+    "GridItemDescription5": "I gatshëm për angazhim profesional",
+    "GridItemTitle6": "Dëshiron të fillojmë një projekt së bashku?"
   },
   "RecentProjects": {
     "ASmallSelectionOf": "Një përzgjedhje e vogël e",
     "RecentProjects": "projekteve të fundit",
-    "CheckLiveSite": "Shiko faqen aktive",
-    "ViewDetails": "Shiko Detajet",
-    "BackToProjects": "Kthehu te Projektet",
-    "TechnologiesUsed": "Teknologjitë e Përdorura",
-    "ProjectDescription": "Përshkrimi i projektit vjen së shpejti...",
+    "CheckLiveSite": "Shiko faqen live",
+    "ViewDetails": "Shiko detajet",
+    "BackToProjects": "Kthehu te projektet",
+    "TechnologiesUsed": "Teknologjitë e përdorura",
+    "ProjectDescription": "Përshkrimi i projektit do të shtohet së shpejti.",
     "ProjectNotFound": "Projekti nuk u gjet",
-    "ProjectDetails": "Detajet e Projektit",
+    "ProjectDetails": "Detajet e projektit",
     "Type": "Lloji",
-    "PrimaryStack": "Teknologjitë Kryesore",
+    "PrimaryStack": "Teknologjitë kryesore",
     "Status": "Statusi",
     "Live": "Aktiv",
     "Website": "Faqja",
     "ProjectTypeWordPress": "Faqe WordPress",
     "ProjectTypeNext": "Aplikacion Next.js",
     "ProjectTypeReact": "Aplikacion React",
-    "ProjectTypeStatic": "Faqe Statike",
-    "ProjectTypeWeb": "Projekt Uebi",
-    "Normholz-AM": "Normholz-AM është kompani për dyer dhe dysheme në Bretzfeld, Gjermani",
-    "BerishaMaler": "Berisha Maler GmbH është kompani ndërtimi në Austri"
+    "ProjectTypeStatic": "Faqe statike",
+    "ProjectTypeWeb": "Projekt uebi",
+    "Normholz-AM": "Normholz-AM është një kompani për dyer dhe dysheme me seli në Bretzfeld, Gjermani.",
+    "BerishaMaler": "Berisha Maler GmbH është kompani ndërtimi me veprimtari në Austri.",
+    "DitarLegal": "Faqe korporative për Ditar Legal me dizajn profesional dhe të besueshëm.",
+    "DitarCompliance": "Faqe për Ditar Compliance, e fokusuar në shërbimet dhe ekspertizën e kompanisë.",
+    "ITMInstallation": "Faqe prezantuese për ITM Installation me shërbimet dhe projektet e realizuara.",
+    "KanzleiAmKureck": "Faqe për zyrë ligjore me strukturë të qartë dhe kontakt të lehtë.",
+    "EmbelHome": "Faqe për Embel Home që prezanton produktet dhe historinë e kompanisë.",
+    "BauunternehmungAR": "Faqe për Bauunternehmung AR me fokus në projektet e ndërtimit."
   },
   "Experience": {
     "My": "Përvoja ime",
-    "WorkExperience": "përvoja e punës",
+    "WorkExperience": "përvoja profesionale",
     "WorkExperienceTitle1": "Inxhinier Softuerik në Pabau",
-    "WorkExperienceDesc1": "Si Inxhinier Softuerik në Pabau, kam punuar në një ekip për të mirëmbajtur dhe zhvilluar aplikacionin tonë të uebit, që përdoret nga mijëra klientë globalisht. Kam qenë përgjegjës për sfida teknike nën presionin e afateve. Komunikimi ka qenë thelbësor për bashkëpunim me ekipet QA dhe Projektuese për rezultate cilësore.",
+    "WorkExperienceDesc1": "Si Inxhinier Softuerik në Pabau, kam punuar në një ekip për zhvillimin dhe mirëmbajtjen e një aplikacioni uebi që përdoret nga mijëra klientë globalisht. Kam menaxhuar sfida teknike nën presion të afateve dhe kam bashkëpunuar ngushtë me ekipet QA dhe dizajnit për rezultate cilësore.",
     "WorkExperienceTitle2": "Zhvillues WordPress në Outkos",
-    "WorkExperienceDesc2": "Krijimi i faqeve të uebit për klientët globalisht është përgjegjësia kryesore ime si zhvillues WordPress. Bashkëpunimi me dizajnerët për të siguruar përputhje në dizajn është pjesë kyçe e punës sime.",
+    "WorkExperienceDesc2": "Si zhvillues WordPress, kam qenë përgjegjës për krijimin e faqeve të uebit për klientë ndërkombëtarë. Bashkëpunimi i vazhdueshëm me dizajnerët ka qenë thelbësor për sigurimin e përputhjes së plotë me dizajnin.",
     "WorkExperienceTitle3": "Zhvillues WordPress në IT2Pi",
-    "WorkExperienceDesc3": "-Dizajnimi, krijimi dhe mirëmbajtja e faqeve të internetit për klientë globalisht është përgjegjësia ime kryesore. -Bashkëpunoj me dizajnerë për përputhje të dizajnit dhe implementim të ideve të tyre. -Krijoj kurse interaktive me Adobe Captivate dhe siguroj integrim me LMS për klientë prestigjiozë.",
+    "WorkExperienceDesc3": "Kam dizajnuar, zhvilluar dhe mirëmbajtur faqe interneti për klientë globalë. Kam bashkëpunuar me dizajnerë për implementimin e ideve të tyre dhe kam krijuar kurse interaktive duke përdorur Adobe Captivate, me integrim të plotë në sisteme LMS për klientë prestigjiozë.",
     "WorkExperienceTitle4": "Zhvillues Uebi Freelancer",
-    "WorkExperienceDesc4": "Si zhvillues freelancer, krijoj dizajne të bukura dhe faqe të fuqishme të personalizuara për bizneset anembanë botës. I sjell idetë në realitet dhe ndihmoj në krijimin e prezencës online."
+    "WorkExperienceDesc4": "Si zhvillues uebi freelancer, krijoj faqe moderne dhe funksionale të personalizuara për biznese anembanë botës, duke i kthyer idetë në zgjidhje digjitale efektive."
   },
   "Footer": {
-    "ReadyToTake": "Gati të çosh",
+    "ReadyToTake": "Gati për ta çuar",
     "your": "prezencën tënde",
-    "DigitalPresence": "digjitale në një nivel tjetër?",
-    "ReachOutToMe": "Kontakto me mua sot për të diskutuar si mund të ndihmoj që t’i arrish qëllimet e tua.",
-    "LetsGetInTouch": "Cakto Takim Online"
+    "DigitalPresence": "digjitale në nivelin tjetër?",
+    "ReachOutToMe": "Kontakto me mua sot për të diskutuar se si mund të ndihmoj në realizimin e qëllimeve të tua.",
+    "LetsGetInTouch": "Cakto një takim online"
   }
 }
