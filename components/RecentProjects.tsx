@@ -4,17 +4,13 @@ import { projects as initialProjects, moreProjects } from "@/data";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
-import { FaEllipsis, FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./ui/Pin";
 import { Link } from "@/i18n/navigation";
-
-const BATCH_SIZE = 2;
 
 const RecentProjects = () => {
   const t = useTranslations("RecentProjects");
   const [activeFilter, setActiveFilter] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(initialProjects.length);
 
   const allProjects = [...initialProjects, ...moreProjects];
   const filterOptions = [
@@ -36,18 +32,10 @@ const RecentProjects = () => {
           if (activeFilter === "Static") return techs.includes("HTML");
           return true;
         });
-  const displayedProjects = filteredProjects.slice(0, visibleCount);
-  const canShowMore = visibleCount < filteredProjects.length;
+  const displayedProjects = filteredProjects;
 
   const handleFilterChange = (filter: string) => {
     setActiveFilter(filter);
-    setVisibleCount(initialProjects.length);
-  };
-
-  const handleShowMore = () => {
-    setVisibleCount((prev) =>
-      Math.min(prev + BATCH_SIZE, filteredProjects.length)
-    );
   };
 
   return (
@@ -147,16 +135,6 @@ const RecentProjects = () => {
         ))}
       </div>
 
-      <div
-        className={`text-center mt-10 ease-in ${!canShowMore && "fade-in-0 hidden"}`}
-      >
-        <MagicButton
-          title="Show More"
-          position="right"
-          icon={<FaEllipsis />}
-          handleClick={handleShowMore}
-        />
-      </div>
     </div>
   );
 };
