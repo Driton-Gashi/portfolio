@@ -64,10 +64,11 @@
   "Experience": {
     "My": "My",
     "WorkExperience": "work experience",
-    "WorkExperienceTitle1": "Software Engineer at Pabau",
-    "WorkExperienceDesc1": "As a Software Engineer at Pabau, I worked as part of a team to maintain and develop our web application, used by thousands of clients worldwide. I was responsible for addressing technical challenges under the pressure of deadlines. Communication was a key aspect of my role, as collaboration with the QA and Project teams was essential to deliver high-quality results.",
-    "WorkExperienceTitle2": "WordPress Developer at Outkos",
-    "WorkExperienceDesc2": "Creating websites for clients around the world is the core responsibility of my role as a WordPress developer. Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work.",
+    "WorkExperienceTitle1": "WordPress Developer at TFG",
+    "WorkExperienceDesc1": "Creating websites for clients around the world is the core responsibility of my role as a WordPress developer. Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work.",
+    "WorkExperienceTitle2": "Software Engineer at Pabau",
+    "WorkExperienceDesc2": "As a Software Engineer at Pabau, I worked as part of a team to maintain and develop our web application, used by thousands of clients worldwide. I was responsible for addressing technical challenges under the pressure of deadlines. Communication was a key aspect of my role, as collaboration with the QA and Project teams was essential to deliver high-quality results.",
+
     "WorkExperienceTitle3": "WordPress Developer at IT2Pi",
     "WorkExperienceDesc3": "-Designing, creating, and maintaining websites for clients around the world is the core responsibility of my role as a WordPress developer. -Collaborating with designers to ensure design consistency and implementing their creative vision is an essential aspect of my work. -I collaborate with designers to create responsive courses using Adobe Captivate, ensuring smooth LMS integration to meet the needs of prestigious clients worldwide.",
     "WorkExperienceTitle4": "Freelance Web Developer",

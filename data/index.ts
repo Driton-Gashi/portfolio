@@ -93,7 +93,7 @@ export const projects = [
     id: 2,
     title: "Berisha Maler Gmbh",
     des: "BerishaMaler",
-    img: "/projects/Berisha-Maler.png",
+    img: "/projects/Berisha-Maler.webp",
     techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
@@ -108,7 +108,7 @@ export const projects = [
     id: 3,
     title: "Ditar Legal",
     des: "DitarLegal",
-    img: "/projects/Ditar-Legal.png",
+    img: "/projects/Ditar-Legal.webp",
     techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
@@ -123,7 +123,7 @@ export const projects = [
     id: 4,
     title: "Ditar Compliance",
     des: "DitarCompliance",
-    img: "/projects/Ditar-Compliance.png",
+    img: "/projects/Ditar-Compliance.webp",
     techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
@@ -138,7 +138,7 @@ export const projects = [
     id: 5,
     title: "ITM Installation",
     des: "ITMInstallation",
-    img: "/projects/itm-installation.png",
+    img: "/projects/itm-installation.webp",
     techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
@@ -153,7 +153,7 @@ export const projects = [
     id: 6,
     title: "Kanzlei Am Kureck",
     des: "KanzleiAmKureck",
-    img: "/projects/Kanzlei-am-Kureck.png",
+    img: "/projects/Kanzlei-am-Kureck.webp",
     techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
@@ -217,7 +217,7 @@ export const projects = [
     id: 10,
     title: "Food Delivery App",
     des: "FoodDeliveryAppDesc",
-    img: "/projects/food-app.png",
+    img: "/projects/food-app.webp",
     techs: ["Next.js", "Express", "MySQL", "TypeScript", "Tailwind"],
     iconLists: [
       "/techs/nextjs.svg",
@@ -248,7 +248,7 @@ export const projects = [
     id: 12,
     title: "Bauunternehmung AR",
     des: "BauunternehmungAR",
-    img: "/projects/Bauunternehmung-AR.png",
+    img: "/projects/Bauunternehmung-AR.webp",
     techs: ["WordPress", "Elementor", "CSS", "JavaScript", "Yoast"],
     iconLists: [
       "/techs/wordpress.svg",
@@ -258,6 +258,15 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://bauunternehmung-ar.de/",
+  },
+  {
+    id: 13,
+    title: "Movie html CSS JS",
+    des: "ProjectDescription",
+    img: "/projects/movie-website-ick.webp",
+    techs: ["HTML", "CSS", "JavaScript"],
+    iconLists: ["/techs/html.svg", "/techs/css.svg", "/techs/js.svg"],
+    link: "https://ickosovo.netlify.app/",
   },
 ];
 
@@ -333,29 +342,29 @@ export const workExperience = [
     title: "WorkExperienceTitle1",
     desc: "WorkExperienceDesc1",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/tfg.png",
   },
   {
     id: 2,
     title: "WorkExperienceTitle2",
     desc: "WorkExperienceDesc2",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/it2pi.jpeg",
   },
   {
     id: 3,
     title: "WorkExperienceTitle3",
     desc: "WorkExperienceDesc3",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/pabau.png",
   },
-  {
-    id: 4,
-    title: "WorkExperienceTitle4",
-    desc: "WorkExperienceDesc4",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
+  // {
+  //   id: 4,
+  //   title: "WorkExperienceTitle4",
+  //   desc: "WorkExperienceDesc4",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
 ];
 
 export const socialMedia = [
