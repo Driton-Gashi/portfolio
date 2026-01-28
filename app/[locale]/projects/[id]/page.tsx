@@ -132,7 +132,7 @@ const ProjectDetailPage = () => {
                 fill
                 src={project.img}
                 alt={project.title}
-                className="z-10 object-cover p-4 rounded-3xl"
+                className="z-10 object-cover object-top p-4 rounded-3xl"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
