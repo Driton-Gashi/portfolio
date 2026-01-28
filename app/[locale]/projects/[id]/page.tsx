@@ -115,9 +115,9 @@ const ProjectDetailPage = () => {
               </div>
             </div>
 
-            <div className="relative flex items-center justify-center w-full overflow-hidden aspect-video rounded-3xl">
+            <div className="relative flex items-center justify-center w-full overflow-hidden aspect-video rounded-2xl">
               <div
-                className="absolute inset-0 overflow-hidden rounded-3xl"
+                className="absolute inset-0 overflow-hidden rounded-2xl"
                 style={{ backgroundColor: "#13162D" }}
               >
                 <Image
@@ -132,7 +132,7 @@ const ProjectDetailPage = () => {
                 fill
                 src={project.img}
                 alt={project.title}
-                className="z-10 object-contain p-6"
+                className="z-10 object-cover p-4 rounded-3xl"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
