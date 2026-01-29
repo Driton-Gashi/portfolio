@@ -20,36 +20,65 @@ const ProjectCard = ({
     style={{ animationDelay: `${index * 40}ms` }}
   >
     <PinContainer title={item.title} href={`/projects/${item.id}`}>
-      <Link href={`/projects/${item.id}`}>
-        <div className="relative flex items-center justify-center sm:w-96 w-[85vw] overflow-hidden aspect-video mb-8">
-          <div
-            className="absolute inset-0 overflow-hidden lg:rounded-3xl"
-            style={{ backgroundColor: "#13162D" }}
-          >
+      <div className="sm:w-96 w-[85vw]">
+        <Link href={`/projects/${item.id}`} className="block">
+          <div className="relative flex items-center justify-center sm:w-96 w-[85vw] overflow-hidden aspect-video mb-8">
+            <div
+              className="absolute inset-0 overflow-hidden lg:rounded-3xl"
+              style={{ backgroundColor: "#13162D" }}
+            >
+              <Image
+                fill
+                src="/bg.png"
+                alt="bgimg"
+                className="object-cover"
+                sizes="(min-width: 1024px) 384px, 80vw"
+              />
+            </div>
             <Image
               fill
-              src="/bg.png"
-              alt="bgimg"
-              className="object-cover"
+              src={item.img}
+              alt="cover"
+              className="z-10 object-cover rounded-tr-lg rounded-tl-lg"
               sizes="(min-width: 1024px) 384px, 80vw"
             />
           </div>
-          <Image
-            fill
-            src={item.img}
-            alt="cover"
-            className="z-10 object-cover rounded-tr-lg rounded-tl-lg"
-            sizes="(min-width: 1024px) 384px, 80vw"
-          />
-        </div>
 
-        <h3 className="font-semibold text-base md:text-lg lg:text-xl line-clamp-1">
-          {item.title}
-        </h3>
+          <h3 className="font-semibold text-base md:text-lg lg:text-xl line-clamp-1">
+            {item.title}
+          </h3>
 
-        <p className="text-sm md:text-base text-[#BEC1DD] line-clamp-2 mt-2 mb-5">
-          {getDescription(item.des)}
-        </p>
+          <p className="text-sm md:text-base text-[#BEC1DD] line-clamp-2 mt-2 mb-5">
+            {getDescription(item.des)}
+          </p>
+        </Link>
+
+        {(item.github || item.deployedOn) && (
+          <div className="flex flex-wrap items-center gap-4 mb-5 text-xs text-white/70">
+            {item.github && (
+              <a
+                href={item.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <Image width={16} height={16} src="/git.svg" alt="GitHub" />
+                <span>GitHub</span>
+              </a>
+            )}
+            {item.deployedOn && (
+              <div className="flex items-center gap-2">
+                <Image
+                  width={16}
+                  height={16}
+                  src={`/${item.deployedOn}.svg`}
+                  alt={item.deployedOn}
+                />
+                <span className="capitalize">{item.deployedOn}</span>
+              </div>
+            )}
+          </div>
+        )}
 
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -70,14 +99,15 @@ const ProjectCard = ({
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
-            <span className="text-sm md:text-base text-purple">
-              {viewDetailsLabel}
-            </span>
+          <Link
+            href={`/projects/${item.id}`}
+            className="flex items-center gap-3 text-sm md:text-base text-purple hover:opacity-80 transition-opacity"
+          >
+            <span>{viewDetailsLabel}</span>
             <FaLocationArrow color="#CBACF9" />
-          </div>
+          </Link>
         </div>
-      </Link>
+      </div>
     </PinContainer>
   </div>
 );

@@ -73,7 +73,19 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export type ProjectData = {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  techs: string[];
+  iconLists: string[];
+  link: string;
+  github?: string;
+  deployedOn?: string;
+};
+
+export const projects: ProjectData[] = [
   {
     id: 1,
     title: "Normholz AM",
@@ -88,6 +100,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://normholz-am.de/",
+    deployedOn: "hostinger",
   },
   {
     id: 2,
@@ -103,6 +116,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://berisha.co.at/",
+    deployedOn: "hostinger",
   },
   {
     id: 3,
@@ -118,6 +132,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://ditar-legal.de/",
+    deployedOn: "hostinger",
   },
   {
     id: 4,
@@ -133,6 +148,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://ditar-compliance.de/",
+    deployedOn: "hostinger",
   },
   {
     id: 5,
@@ -148,6 +164,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://itm-installation.at/",
+    deployedOn: "hostinger",
   },
   {
     id: 6,
@@ -163,6 +180,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://kanzlei-am-kureck.de/",
+    deployedOn: "hostinger",
   },
   {
     id: 7,
@@ -178,6 +196,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://embel-home.de/",
+    deployedOn: "hostinger",
   },
 
   {
@@ -195,6 +214,8 @@ export const projects = [
       "/techs/tailwind.svg",
     ],
     link: "https://cimerat.dritongashi.com/",
+    deployedOn: "vercel",
+    github: "https://github.com/Driton-Gashi/cimerat",
   },
 
   {
@@ -212,6 +233,8 @@ export const projects = [
       "/techs/wordpress.svg",
     ],
     link: "https://movie.dritongashi.com/",
+    deployedOn: "vercel",
+    github: "https://github.com/Driton-Gashi/movie-app",
   },
   {
     id: 10,
@@ -227,6 +250,8 @@ export const projects = [
       "/techs/tailwind.svg",
     ],
     link: "https://movie.dritongashi.com/",
+    deployedOn: "vercel",
+    github: "https://github.com/Driton-Gashi/Food-Order-App",
   },
   {
     id: 11,
@@ -243,6 +268,7 @@ export const projects = [
       "/techs/acf.svg",
     ],
     link: "https://tregimi.net/",
+    deployedOn: "hostinger",
   },
   {
     id: 12,
@@ -258,6 +284,7 @@ export const projects = [
       "/techs/yoast.svg",
     ],
     link: "https://bauunternehmung-ar.de/",
+    deployedOn: "hostinger",
   },
   {
     id: 13,
@@ -267,6 +294,8 @@ export const projects = [
     techs: ["HTML", "CSS", "JavaScript"],
     iconLists: ["/techs/html.svg", "/techs/css.svg", "/techs/js.svg"],
     link: "https://ickosovo.netlify.app/",
+    deployedOn: "netlify",
+    github: "https://github.com/Driton-Gashi/ick-projekti",
   },
   {
     id: 14,
@@ -290,6 +319,7 @@ export const projects = [
       "/techs/php.svg",
     ],
     link: "https://novalight-ks.com/",
+    deployedOn: "hostinger",
   },
 ];
 

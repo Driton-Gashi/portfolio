@@ -17,6 +17,8 @@ export type ProjectItem = {
   img: string;
   iconLists: string[];
   techs?: string[];
+  github?: string;
+  deployedOn?: string;
 };
 
 const SectionHeading = ({

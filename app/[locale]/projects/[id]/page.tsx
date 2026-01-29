@@ -19,6 +19,8 @@ interface Project {
   iconLists: string[];
   link: string;
   techs?: string[];
+  github?: string;
+  deployedOn?: string;
 }
 
 const ProjectDetailPage = () => {
@@ -109,13 +111,29 @@ const ProjectDetailPage = () => {
                   {t("CheckLiveSite")}
                   <FaLocationArrow color="#CBACF9" />
                 </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-full border border-white/[.12] px-5 py-2 text-sm text-white/70 hover:text-white hover:border-white/[.2] transition-colors"
+                  >
+                    <Image width={18} height={18} src="/git.svg" alt="GitHub" />
+                    <span>GitHub</span>
+                  </a>
+                )}
                 <div className="rounded-full border border-white/[.12] px-4 py-2 text-sm text-white/70">
                   {getProjectType(techs)}
                 </div>
               </div>
             </div>
 
-            <div className="relative flex items-center justify-center w-full overflow-hidden aspect-video rounded-2xl">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center justify-center w-full overflow-hidden aspect-video rounded-2xl"
+            >
               <div
                 className="absolute inset-0 overflow-hidden rounded-2xl"
                 style={{ backgroundColor: "#13162D" }}
@@ -135,7 +153,7 @@ const ProjectDetailPage = () => {
                 className="z-10 object-cover object-top p-4 rounded-3xl"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
-            </div>
+            </a>
           </div>
 
           <div className="mt-12 grid lg:grid-cols-2 gap-8">
@@ -176,6 +194,37 @@ const ProjectDetailPage = () => {
                     {getDomain(project.link)}
                   </a>
                 </div>
+                {project.github && (
+                  <div className="flex items-center justify-between gap-6">
+                    <span className="text-white/60">
+                      {t("Repository") || "Repository"}
+                    </span>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-80 transition-opacity"
+                    >
+                      {project.github.replace("https://", "")}
+                    </a>
+                  </div>
+                )}
+                {project.deployedOn && (
+                  <div className="flex items-center justify-between gap-6">
+                    <span className="text-white/60">
+                      {t("DeployedOn") || "Deployed On"}
+                    </span>
+                    <div className="flex items-center gap-2 text-white">
+                      <Image
+                        width={18}
+                        height={18}
+                        src={`/${project.deployedOn}.svg`}
+                        alt={project.deployedOn}
+                      />
+                      <span className="capitalize">{project.deployedOn}</span>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
