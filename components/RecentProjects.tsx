@@ -19,6 +19,7 @@ export type ProjectItem = {
   techs?: string[];
   github?: string;
   deployedOn?: string;
+  link: string;
 };
 
 const SectionHeading = ({
