@@ -261,7 +261,7 @@ export const projects = [
   },
   {
     id: 13,
-    title: "Movie html CSS JS",
+    title: "Movie App Design",
     des: "ProjectDescription",
     img: "/projects/movie-website-ick.webp",
     techs: ["HTML", "CSS", "JavaScript"],
