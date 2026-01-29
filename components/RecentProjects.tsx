@@ -2,7 +2,7 @@
 
 import { projects as initialProjects } from "@/data";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 type FilterOption = {
@@ -58,12 +58,20 @@ const FilterBar = ({
   </div>
 );
 
+const shuffleArray = <T,>(items: T[]) => {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i -= 1) {
+    const swapIndex = Math.floor(Math.random() * (i + 1));
+    [result[i], result[swapIndex]] = [result[swapIndex], result[i]];
+  }
+  return result;
+};
+
 const RecentProjects = () => {
   const t = useTranslations("RecentProjects");
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateKey, setAnimateKey] = useState(0);
 
-  const allProjects = [...initialProjects];
   const filterOptions = [
     { id: "All", label: "All" },
     { id: "WordPress", label: "WordPress" },
@@ -72,10 +80,10 @@ const RecentProjects = () => {
     { id: "Static", label: "Static Sites" },
   ];
 
-  const filteredProjects =
-    activeFilter === "All"
-      ? allProjects
-      : allProjects.filter((project) => {
+  const filteredProjects = useMemo(() => {
+    return activeFilter === "All"
+      ? initialProjects
+      : initialProjects.filter((project) => {
           const techs = project.techs || [];
           if (activeFilter === "WordPress") return techs.includes("WordPress");
           if (activeFilter === "Next.js") return techs.includes("Next.js");
@@ -83,6 +91,9 @@ const RecentProjects = () => {
           if (activeFilter === "Static") return techs.includes("HTML");
           return true;
         });
+  }, [activeFilter]);
+
+  const [shuffledProjects, setShuffledProjects] = useState(filteredProjects);
   const handleFilterChange = (filter: string) => {
     setActiveFilter(filter);
   };
@@ -90,6 +101,10 @@ const RecentProjects = () => {
   useEffect(() => {
     setAnimateKey((prev) => prev + 1);
   }, [activeFilter]);
+
+  useEffect(() => {
+    setShuffledProjects(shuffleArray(filteredProjects));
+  }, [filteredProjects]);
 
   return (
     <div id="projects" className="py-20">
@@ -108,7 +123,7 @@ const RecentProjects = () => {
         key={animateKey}
         className="project-grid flex flex-wrap items-center justify-center p-4 gap-12 mt-8"
       >
-        {filteredProjects.map((item, index) => (
+        {shuffledProjects.map((item, index) => (
           <ProjectCard
             key={item.id}
             item={item as ProjectItem}

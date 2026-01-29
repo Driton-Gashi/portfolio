@@ -268,6 +268,29 @@ export const projects = [
     iconLists: ["/techs/html.svg", "/techs/css.svg", "/techs/js.svg"],
     link: "https://ickosovo.netlify.app/",
   },
+  {
+    id: 14,
+    title: "Nova Light e-commerce",
+    des: "ProjectDescription",
+    img: "/projects/novalight.webp",
+    techs: [
+      "WordPress",
+      "Elementor",
+      "WooCommerce",
+      "CSS",
+      "JavaScript",
+      "PHP",
+    ],
+    iconLists: [
+      "/techs/wordpress.svg",
+      "/techs/elementor.svg",
+      "/techs/woo.svg",
+      "/techs/css.svg",
+      "/techs/js.svg",
+      "/techs/php.svg",
+    ],
+    link: "https://novalight-ks.com/",
+  },
 ];
 
 export const workExperience = [
