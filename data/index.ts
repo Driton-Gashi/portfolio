@@ -321,6 +321,30 @@ export const projects: ProjectData[] = [
     link: "https://novalight-ks.com/",
     deployedOn: "hostinger",
   },
+  {
+    id: 14,
+    title: "Resort Anes Drinit",
+    des: "ProjectDescription",
+    img: "/projects/resort-anes-drinit.webp",
+    techs: [
+      "WordPress",
+      "Elementor",
+      "WooCommerce",
+      "CSS",
+      "JavaScript",
+      "PHP",
+    ],
+    iconLists: [
+      "/techs/wordpress.svg",
+      "/techs/elementor.svg",
+      "/techs/woo.svg",
+      "/techs/css.svg",
+      "/techs/js.svg",
+      "/techs/php.svg",
+    ],
+    link: "https://anesdrinit.com/",
+    deployedOn: "hostinger",
+  },
 ];
 
 export const workExperience = [
