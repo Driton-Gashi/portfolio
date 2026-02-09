@@ -322,7 +322,7 @@ export const projects: ProjectData[] = [
     deployedOn: "hostinger",
   },
   {
-    id: 14,
+    id: 15,
     title: "Resort Anes Drinit",
     des: "ProjectDescription",
     img: "/projects/resort-anes-drinit.webp",
@@ -344,6 +344,22 @@ export const projects: ProjectData[] = [
     ],
     link: "https://anesdrinit.com/",
     deployedOn: "hostinger",
+  },
+  {
+    id: 16,
+    title: "Personal Portfolio",
+    des: "ProjectDescription",
+    img: "/projects/portfolio.webp",
+    techs: ["Next.js", "TypeScript", "Tailwind", "React"],
+    iconLists: [
+      "/techs/nextjs.svg",
+      "/techs/typescript.svg",
+      "/techs/tailwind.svg",
+      "/techs/react.svg",
+    ],
+    link: "https://dritongashi.com/",
+    deployedOn: "vercel",
+    github: "https://github.com/Driton-Gashi/portfolio",
   },
 ];
 
