@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Suspense } from "react";
 import { Analytics } from "@/components/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,7 +43,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <Analytics />
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );
