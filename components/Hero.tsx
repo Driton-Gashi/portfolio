@@ -5,6 +5,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { GithubContributions } from "./GithubContributions";
 
 interface P {
   hasUsedNavbar: boolean;
@@ -47,10 +48,6 @@ const Hero = ({ hasUsedNavbar }: P) => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            {t("ITryMyBestToCreateThingsWith")}
-          </p>
-
           <Link href="#projects">
             <MagicButton
               title={t("ShowMyWork")}
@@ -58,6 +55,7 @@ const Hero = ({ hasUsedNavbar }: P) => {
               position="right"
             />
           </Link>
+          {/* <GithubContributions /> */}
         </div>
       </div>
     </div>
